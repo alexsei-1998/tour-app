@@ -1,0 +1,33 @@
+.alternateWrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.refresh-btn{
+    padding: 1rem;
+    border: 2px solid rgba(15, 180, 50);
+    background-color: rgba(15, 180, 50, 0.2);
+    font-size: medium;
+    position: relative;
+}
+.refresh-btn::before{
+    content: "";
+    background-color: rgba(15, 180, 50, 0.7);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform : scaleX(0);
+    transform-origin:left;
+}
+.refresh-btn:hover::before{
+    transform: scale(1);
+    cursor:pointer;
+}

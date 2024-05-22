@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after{
+    user-select: none;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    width: 100vw;
+    padding: 1rem;
+}
+.heading{
+    text-align: center;
+}
+.title{
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 5px;
+    border: 0.4rem dashed rgb(1, 15, 150);
+}
+.list{
+   width: 70%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 0 auto; 
+}
